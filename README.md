@@ -32,7 +32,7 @@ An abstraction layer in the existing core library, decoupling its XQuery core fr
 
 ### Cross-cutting — Direct collaboration with the TEI Technical Council
 
-This project works in active collaboration with the TEI Technical Council, the body responsible for the TEI standard, on the next iteration of the Processing Model specification. The independent second implementation systematically surfaces ambiguities, gaps, and de-facto extensions; the project team brings these findings into the Council's ongoing work as concrete proposals. Two members of the Steering Committee are current or former Council members, ensuring sustained engagement rather than one-shot feedback.
+This project works in active collaboration with the TEI Technical Council, the body responsible for the TEI standard, on the next iteration of the Processing Model specification. The independent second implementation systematically surfaces ambiguities, gaps, and de-facto extensions in the Processing Model; these findings are contributed back into the Council's ongoing work as concrete proposals.
 
 *Aims:* harden the open standard through real implementation testing; ensure ODD portability — the same ODD file should produce equivalent results in both implementations; deepen the Council's empirical basis for refining the specification; reduce the standard's dependency on any single implementation.
 
