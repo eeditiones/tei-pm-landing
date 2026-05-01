@@ -30,15 +30,15 @@ An abstraction layer in the existing core library, decoupling its XQuery core fr
 
 *Aims:* reduce TEI Publisher's dependency on a single XML database; enable alternative XQuery engines (BaseX, Saxon) in the future; make the existing platform more flexible and future-proof.
 
-### Cross-cutting — Specification feedback to the TEI Technical Council
+### Cross-cutting — Direct collaboration with the TEI Technical Council
 
-A second, independent implementation surfaces ambiguities and missing details in the specification, and identifies TEI Publisher extensions that should be standardized. Concrete proposals are submitted to the TEI Technical Council for inclusion in the TEI Guidelines.
+This project works in active collaboration with the TEI Technical Council, the body responsible for the TEI standard, on the next iteration of the Processing Model specification. The independent second implementation systematically surfaces ambiguities, gaps, and de-facto extensions; the project team brings these findings into the Council's ongoing work as concrete proposals. Two members of the Steering Committee are current or former Council members, ensuring sustained engagement rather than one-shot feedback.
 
-*Aims:* harden the open standard; ensure ODD portability — the same ODD file should produce equivalent results in both implementations; reduce the standard's dependency on any single implementation.
+*Aims:* harden the open standard through real implementation testing; ensure ODD portability — the same ODD file should produce equivalent results in both implementations; deepen the Council's empirical basis for refining the specification; reduce the standard's dependency on any single implementation.
 
 ## Read more
 
-- **[Prospectus (English, 18 April 2026)](prospectus-2026-04-18.pdf)** — full project description and call for institutional support
+- **[Prospectus (English, 1 May 2026)](prospectus-2026-05-01.pdf)** — full project description and call for institutional support
 - **Code:** `tei-publisher-py` *(public release forthcoming)*
 - **Standard:** [TEI Guidelines, Chapter 23.5.4 — *Specifying Web Output*](https://tei-c.org/release/doc/tei-p5-doc/en/html/TD.html)
 
