@@ -17,7 +17,7 @@ We are building **a second, independent implementation in Python**: a lightweigh
 ## Read more
 
 - **[Prospectus (English)](prospectus.pdf)** — full project description and call for institutional support
-- **Code:** [eeditiones/tei-publisher-py](https://github.com/eeditiones/tei-publisher-py)
+- **Code:** `tei-publisher-py` *(public release forthcoming)*
 - **Standard:** [TEI Guidelines, Chapter 23.5.4 — *Specifying Web Output*](https://tei-c.org/release/doc/tei-p5-doc/en/html/TD.html)
 
 ## Supporters
