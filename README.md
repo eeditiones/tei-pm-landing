@@ -14,6 +14,28 @@ Yet only one implementation of this standard exists, and it requires a specializ
 
 We are building **a second, independent implementation in Python**: a lightweight library, installable with a single command, that brings the Processing Model to the Python research environment. Wherever Python tools are at home — Jupyter notebooks, command-line scripts, CI pipelines — the Processing Model can come along.
 
+## Project goals
+
+The project is structured as two independently fundable sub-projects, plus cross-cutting work on the standard itself.
+
+### Sub-project 1 — Python implementation of the TEI Processing Model
+
+A lightweight, open-source Python library — `tei-publisher-py` — that transforms TEI documents according to ODD specifications, without requiring eXist-db. Distributed via PyPI, usable as a library or as a command-line tool (`teipublisher`) in existing Python workflows: Jupyter notebooks, NLP pipelines, CI/CD, batch processing, headless rendering. Outputs: HTML and Markdown (already in the working prototype), LaTeX and plain-text (in the scope of this project).
+
+*Aims:* lower the entry barrier for editions of any size; bring the Processing Model into the Python ecosystem where most Digital Humanities work happens today.
+
+### Sub-project 2 — Abstraction layer in `tei-publisher-lib`
+
+An abstraction layer in the existing core library, decoupling its XQuery core from eXist-db-specific APIs. With an eXist-db adapter for backward compatibility and a BaseX adapter as a second, working proof-of-concept implementation.
+
+*Aims:* reduce TEI Publisher's dependency on a single XML database; enable alternative XQuery engines (BaseX, Saxon) in the future; make the existing platform more flexible and future-proof.
+
+### Cross-cutting — Specification feedback to the TEI Technical Council
+
+A second, independent implementation surfaces ambiguities and missing details in the specification, and identifies TEI Publisher extensions that should be standardized. Concrete proposals are submitted to the TEI Technical Council for inclusion in the TEI Guidelines.
+
+*Aims:* harden the open standard; ensure ODD portability — the same ODD file should produce equivalent results in both implementations; reduce the standard's dependency on any single implementation.
+
 ## Read more
 
 - **[Prospectus (English)](prospectus.pdf)** — full project description and call for institutional support
