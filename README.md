@@ -38,7 +38,7 @@ A second, independent implementation surfaces ambiguities and missing details in
 
 ## Read more
 
-- **[Prospectus (English)](prospectus.pdf)** — full project description and call for institutional support
+- **[Prospectus (English, 18 April 2026)](prospectus-2026-04-18.pdf)** — full project description and call for institutional support
 - **Code:** `tei-publisher-py` *(public release forthcoming)*
 - **Standard:** [TEI Guidelines, Chapter 23.5.4 — *Specifying Web Output*](https://tei-c.org/release/doc/tei-p5-doc/en/html/TD.html)
 
