@@ -38,7 +38,7 @@ This project works in active collaboration with the TEI Technical Council, the b
 
 ## Read more
 
-- **[Prospectus (English, 1 May 2026)](prospectus-2026-05-01.pdf)** — full project description and call for institutional support
+- **[Prospectus (English, 2 May 2026)](prospectus-2026-05-02.pdf)** — full project description and call for institutional support
 - **Code:** `tei-publisher-py` *(public release forthcoming)*
 - **Standard:** [TEI Guidelines, Chapter 23.5.4 — *Specifying Web Output*](https://tei-c.org/release/doc/tei-p5-doc/en/html/TD.html)
 
