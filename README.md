@@ -2,7 +2,7 @@
   <img src="assets/e-editiones-logo.png" alt="e-editiones" width="280">
 </p>
 
-# An Open Implementation of the TEI Processing Model
+# Open Processing Model (OPM)
 
 *A second, independent implementation of an open standard — bringing the TEI Processing Model to the Python research environment.*
 
