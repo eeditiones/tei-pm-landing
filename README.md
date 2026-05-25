@@ -6,49 +6,74 @@
 
 *A second, independent implementation of an open standard — bringing the TEI Processing Model to the Python research environment.*
 
-## What this project does
+## The challenge
 
-Scholarly editions today increasingly need to appear as printed books, websites, PDFs, and searchable data — all from the same source. The **TEI Processing Model**, an open international standard published in 2016, makes this possible by letting editors declare display rules in their data, rather than re-implementing them in custom code for every project.
+The **TEI Processing Model** is an open standard (TEI Guidelines, Chapter 23.5.4) that describes how TEI-encoded texts are transformed into output formats such as HTML, PDF, or LaTeX. Instead of writing thousands of lines of custom XSLT, editors declare their transformation rules in ODD files using TEI's own vocabulary.
 
-Yet only one implementation of this standard exists, and it requires a specialized XML database (eXist-db) — a high bar for smaller editions and out of step with the Python-based tooling now standard across the Digital Humanities.
+Yet despite being an open standard since 2016, only one complete implementation exists: TEI Publisher, built on the XML database eXist-db. Anyone who wants to use the Processing Model must operate eXist-db — specialised infrastructure that many projects, especially smaller ones, cannot afford to maintain.
 
-We are building **a second, independent implementation in Python**: a lightweight library, installable with a single command, that brings the Processing Model to the Python research environment. Wherever Python tools are at home — Jupyter notebooks, command-line scripts, CI pipelines — the Processing Model can come along.
+Meanwhile Python has become the lingua franca of the Digital Humanities — the language of corpus linguistics, NLP, and machine learning, and of tools like CollateX, spaCy, NLTK, and Jupyter. But there is no way to use the TEI Processing Model in these environments.
 
-## Project goals
+> A standard with only one implementation is, in practice, a proprietary format.
 
-The project is structured as two independently fundable sub-projects, plus cross-cutting work on the standard itself.
+## The solution
+
+e-editiones — the Swiss non-profit behind TEI Publisher — proposes two self-contained, independently fundable sub-projects, plus targeted upstream work on the standard itself. Each delivers a usable output on its own; together they form the complete intervention. Funding can start from CHF 30,000 for Sub-project 1 and extend modularly.
 
 ### Sub-project 1 — Python implementation of the TEI Processing Model
 
-A lightweight, open-source Python library — `tei-publisher-py` — that transforms TEI documents according to ODD specifications, without requiring eXist-db. Distributed via PyPI, usable as a library or as a command-line tool (`teipublisher`) in existing Python workflows: Jupyter notebooks, NLP pipelines, CI/CD, batch processing, headless rendering. Outputs: HTML and Markdown (already in the working prototype), LaTeX and plain-text (in the scope of this project).
+A lightweight, open-source Python library (`pip install`) that transforms TEI documents according to ODD specifications, without requiring eXist-db. Outputs: **HTML, LaTeX, plain text**. Usable as a library, a command-line tool, or in existing Python workflows — Jupyter notebooks, CI/CD pipelines, serverless deployments.
 
-*Aims:* lower the entry barrier for editions of any size; bring the Processing Model into the Python ecosystem where most Digital Humanities work happens today.
+*Budget: CHF 30,000 (minimum) – CHF 42,000 (full).*
 
 ### Sub-project 2 — Abstraction layer in `tei-publisher-lib`
 
-An abstraction layer in the existing core library, decoupling its XQuery core from eXist-db-specific APIs. With an eXist-db adapter for backward compatibility and a BaseX adapter as a second, working proof-of-concept implementation.
+An abstraction layer in the existing core library, decoupling its XQuery core from eXist-db-specific APIs and enabling alternative XQuery engines (BaseX, Saxon) in the future.
 
-*Aims:* reduce TEI Publisher's dependency on a single XML database; enable alternative XQuery engines (BaseX, Saxon) in the future; make the existing platform more flexible and future-proof.
+*Budget: CHF 24,000 (minimum) – CHF 32,400 (full).*
 
 ### Cross-cutting — Direct collaboration with the TEI Technical Council
 
-This project works in active collaboration with the TEI Technical Council, the body responsible for the TEI standard, on the next iteration of the Processing Model specification. The independent second implementation systematically surfaces ambiguities, gaps, and de-facto extensions in the Processing Model; these findings are contributed back into the Council's ongoing work as concrete proposals.
+Contributing into the Council's ongoing work on the next iteration of the Processing Model specification. The independent second implementation systematically surfaces ambiguities, gaps, and de-facto extensions in the Processing Model; these findings are brought back as concrete proposals. Included proportionally in both sub-projects.
 
-*Aims:* harden the open standard through real implementation testing; ensure ODD portability — the same ODD file should produce equivalent results in both implementations; deepen the Council's empirical basis for refining the specification; reduce the standard's dependency on any single implementation.
+### At a glance
+
+| | |
+|---|---|
+| **Structure** | Two self-contained, independently fundable sub-projects |
+| **Entry budget** | From CHF 30,000 (Sub-project 1, minimum) |
+| **Full build-out** | Up to CHF 75,000 (both sub-projects, full) |
+| **Sponsor** | e-editiones (Swiss non-profit association) |
+| **Outputs** | Open-source Python library on PyPI, abstraction layer in `tei-publisher-lib`, contributions to the TEI Technical Council |
+
+## Project team
+
+**Project leads:** Wolfgang Meier (creator of TEI Publisher) and Magdalena Turska (TEI Processing Model co-author, former TEI Technical Council member).
+
+**Steering Committee:** Dr. Helena Bermúdez Sabel (JinnTec, TEI Technical Council), Dr. Anne Diekjobst (Co-President e-editiones, ULB Bonn), Dr. Andreas Kränzle (Co-President e-editiones, Karl Barth Edition), Dr. Andreas Wagner (Max-Planck-Institut für Rechtsgeschichte und Rechtstheorie, Frankfurt).
+
+## How you can support this project
+
+We are seeking support from institutions that share our commitment to open standards and sustainable digital infrastructure for the humanities.
+
+**Partnership levels**
+
+- **Sustaining Partner** (CHF 10,000+) — logo on landing page, acknowledgment in all publications, named in the PyPI package metadata, seat on the Steering Committee.
+- **Supporting Partner** (CHF 5,000–9,999) — logo on landing page, acknowledgment in all publications.
+- **Contributing Partner** (CHF 1,000–4,999) — name on landing page, acknowledgment in final report.
+- **Friend of the Project** (up to CHF 999) — name on landing page.
+
+You can also write a **Letter of Support**, **become a member of e-editiones**, or contribute **in kind** (test data, beta testing, dissemination through your networks). See the prospectus for details.
 
 ## Read more
 
-- **[Prospectus (English, 2 May 2026)](prospectus-2026-05-02.pdf)** — full project description and call for institutional support
+- **[Prospectus (English, 11 May 2026)](prospectus-2026-05-11.pdf)** — full project description and call for partners and supporters
 - **Code:** `tei-publisher-py` *(public release forthcoming)*
 - **Standard:** [TEI Guidelines, Chapter 23.5.4 — *Specifying Web Output*](https://tei-c.org/release/doc/tei-p5-doc/en/html/TD.html)
 
-## Supporters
-
-*To be announced.*
-
 ## About e-editiones
 
-[e-editiones](https://e-editiones.org) is an international non-profit association based in Switzerland, dedicated to the cooperative development of open-source tools for digital scholarly editions — including TEI Publisher and now its Python implementation.
+[e-editiones](https://e-editiones.org) is a Swiss non-profit dedicated to the cooperative development of open-source tools for digital scholarly editions. It coordinates the development of TEI Publisher — the de facto standard for TEI-based publishing in Switzerland — and acts as project sponsor. The [e-editiones project registry](https://www.e-editiones.org/map/) lists over 40 edition projects worldwide that use TEI Publisher.
 
 ## Contact
 
